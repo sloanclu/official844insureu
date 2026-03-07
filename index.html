@@ -3,43 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gregory M. Sloan - Licensed Life & Health Insurance Agent. Accelerated underwriting, high-limit policies, and privacy-first coverage solutions.">
-    <meta name="keywords" content="life insurance, health insurance, critical illness, cancer insurance, accelerated underwriting">
-    <title>Gregory M. Sloan - Life & Health Insurance Solutions</title>
+    <title>Gregory M. Sloan - Insurance Expert | 844-INSURE-U</title>
+    <meta name="description" content="Gregory M. Sloan, CLU, ChFC - Licensed Life & Health Insurance Agent. Explore supplemental health, life, and critical illness insurance plans.">
+    <meta name="keywords" content="life insurance, health insurance, critical illness, cancer insurance, insurance agent">
+    <meta name="author" content="Gregory M. Sloan, CLU, ChFC">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230A2540' width='100' height='100'/><text x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='%23ffffff' font-family='Montserrat'>844</text></svg>">
-    
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FinancialService",
-        "name": "Gregory M. Sloan Insurance Agency",
-        "description": "Licensed Life and Health Insurance Agent specializing in accelerated underwriting and high-limit policies",
-        "telephone": "+1-844-467-8738",
-        "url": "https://official844insureu.com",
-        "areaServed": "US",
-        "knowsAbout": ["Life Insurance", "Health Insurance", "Critical Illness Insurance", "Cancer Insurance"],
-        "jobTitle": "Licensed Insurance Agent",
-        "credential": [
-            {
-                "@type": "EducationalOccupationalCredential",
-                "name": "Chartered Life Underwriter (CLU)"
-            },
-            {
-                "@type": "EducationalOccupationalCredential",
-                "name": "Chartered Financial Consultant (ChFC)"
-            }
-        ]
-    }
-    </script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230A2540' width='100' height='100'/><text x='50' y='65' font-size='40' font-weight='bold' fill='white' text-anchor='middle' font-family='Arial'>U</text></svg>">
     
     <style>
         * {
@@ -47,521 +16,567 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
-        :root {
-            --primary-navy: #0A2540;
-            --action-blue: #0070F3;
-            --action-blue-hover: #0055CC;
-            --background: #F8FAFC;
-            --card-bg: #FFFFFF;
-            --text-dark: #1A202C;
-            --text-light: #718096;
-            --border-light: #E2E8F0;
-            --icon-bg: #E6F2FF;
-            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
-            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
-            --shadow-hover: 0 12px 24px rgba(0, 0, 0, 0.12);
-        }
-        
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background-color: var(--background);
-            color: var(--text-dark);
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: #1a1a1a;
             line-height: 1.6;
         }
-        
-        /* Header & Hero */
-        header {
-            background: linear-gradient(135deg, var(--primary-navy) 0%, #0D3557 100%);
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-            box-shadow: var(--shadow-md);
+
+        body {
+            padding: 40px 20px;
         }
-        
-        .header-container {
+
+        .container {
             max-width: 1200px;
             margin: 0 auto;
         }
-        
-        .logo-text {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            letter-spacing: 0.5px;
-        }
-        
-        .phone-display {
-            font-size: 2.2rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            margin: 1rem 0;
-            font-family: 'Montserrat', sans-serif;
-        }
-        
-        .phone-subtext {
-            font-size: 0.95rem;
-            opacity: 0.9;
-            margin-top: 0.5rem;
-        }
-        
-        /* Bio Section */
-        .bio-section {
-            max-width: 900px;
-            margin: 3rem auto;
-            padding: 0 1rem;
-        }
-        
-        .bio-card {
-            background: var(--card-bg);
-            padding: 2.5rem;
-            border-radius: 16px;
-            box-shadow: var(--shadow-md);
+
+        /* ===== HEADER SECTION ===== */
+        .header {
             text-align: center;
-            border-left: 5px solid var(--action-blue);
-            transition: all 0.3s ease;
-        }
-        
-        .bio-card:hover {
-            box-shadow: var(--shadow-hover);
-            transform: translateY(-4px);
-        }
-        
-        .bio-card h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-            color: var(--primary-navy);
-        }
-        
-        .bio-card p {
-            font-size: 1.05rem;
-            line-height: 1.8;
-            color: var(--text-dark);
-        }
-        
-        /* Section Headers */
-        .section-header {
-            max-width: 1200px;
-            margin: 3rem auto 2rem;
-            padding: 0 1rem;
-        }
-        
-        .section-header h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2rem;
-            color: var(--primary-navy);
-            margin-bottom: 0.5rem;
-        }
-        
-        .section-header p {
-            color: var(--text-light);
-            font-size: 1.1rem;
-        }
-        
-        /* Cards Grid */
-        .cards-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem 3rem;
-        }
-        
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-        
-        .product-card {
-            background: var(--card-bg);
-            border-radius: 16px;
-            padding: 2rem;
-            box-shadow: var(--shadow-sm);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            margin-bottom: 60px;
             display: flex;
             flex-direction: column;
-            text-align: center;
-            border: 1px solid var(--border-light);
+            align-items: center;
+            gap: 30px;
         }
-        
-        .product-card:hover {
-            box-shadow: var(--shadow-hover);
-            transform: translateY(-8px);
-            border-color: var(--action-blue);
-        }
-        
-        .card-icon {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 1.5rem;
-            background: var(--icon-bg);
-            border-radius: 50%;
+
+        .header-top {
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2.5rem;
-            color: var(--action-blue);
-            transition: all 0.3s ease;
+            gap: 30px;
+            flex-wrap: wrap;
         }
-        
-        .product-card:hover .card-icon {
-            background: var(--action-blue);
-            color: white;
-            transform: scale(1.1);
+
+        .headshot-container {
+            flex-shrink: 0;
         }
-        
-        .card-title {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.25rem;
+
+        .headshot {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #0A2540;
+            box-shadow: 0 4px 12px rgba(10, 37, 64, 0.15);
+        }
+
+        .branding {
+            text-align: center;
+        }
+
+        .phone-number-display {
+            font-size: 28px;
+            font-weight: 700;
+            color: #0A2540;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .phone-number-display-small {
+            font-size: 16px;
+            color: #555;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .agent-name {
+            font-size: 18px;
             font-weight: 600;
-            color: var(--primary-navy);
-            margin-bottom: 1rem;
+            color: #0A2540;
+            margin-top: 16px;
+            letter-spacing: 0.3px;
+        }
+
+        .agent-title {
+            font-size: 13px;
+            color: #888;
+            margin-top: 4px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ===== BIO SECTION ===== */
+        .bio-section {
+            max-width: 700px;
+            margin: 0 auto 60px;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .bio-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #0A2540;
+            margin-bottom: 12px;
+        }
+
+        .bio-text {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .call-cta {
+            display: inline-block;
+            padding: 10px 24px;
+            background: linear-gradient(to bottom, #f5f5f5, #e8e8e8);
+            color: #1a1a1a;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 600;
+            border: 1px solid #d0d0d0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .call-cta:hover {
+            background: linear-gradient(to bottom, #efefef, #ddd);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ===== SECTION HEADERS ===== */
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+            margin-top: 60px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0A2540;
+            margin-bottom: 8px;
+        }
+
+        .section-subtitle {
+            font-size: 13px;
+            color: #888;
+            font-weight: 500;
+        }
+
+        /* ===== GRID LAYOUT ===== */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: 1024px) {
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+        }
+
+        /* ===== PRODUCT CARD ===== */
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 16px;
+        }
+
+        .product-icon-container {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px solid #4A90E2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            flex-shrink: 0;
+        }
+
+        .product-icon {
+            font-size: 40px;
+            color: #4A90E2;
+        }
+
+        .product-name {
+            font-size: 15px;
+            font-weight: 600;
+            color: #0A2540;
             line-height: 1.4;
         }
-        
-        .card-description {
-            color: var(--text-light);
-            font-size: 0.95rem;
-            margin-bottom: 1.5rem;
-            flex-grow: 1;
+
+        .product-description {
+            font-size: 12px;
+            color: #888;
+            line-height: 1.5;
+            min-height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        
-        .card-button {
-            background: var(--action-blue);
-            color: white;
-            border: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            width: 100%;
+
+        .product-button {
+            padding: 8px 20px;
+            background: linear-gradient(to bottom, #f5f5f5, #e8e8e8);
+            color: #1a1a1a;
             text-decoration: none;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 600;
+            border: 1px solid #d0d0d0;
+            transition: all 0.3s ease;
+            cursor: pointer;
             display: inline-block;
-            font-family: 'Inter', sans-serif;
+            white-space: nowrap;
         }
-        
-        .card-button:hover {
-            background: var(--action-blue-hover);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 112, 243, 0.3);
+
+        .product-button:hover {
+            background: linear-gradient(to bottom, #efefef, #ddd);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
-        
-        .card-button:active {
-            transform: translateY(0);
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background-color: #ffffff;
+            border-top: 1px solid #e8e8e8;
+            padding: 40px 20px;
+            margin-top: 80px;
         }
-        
-        /* Footer */
-        footer {
-            background: var(--primary-navy);
-            color: white;
-            padding: 3rem 1rem;
-            margin-top: 4rem;
-        }
-        
-        .footer-container {
+
+        .footer-content {
             max-width: 1200px;
             margin: 0 auto;
         }
-        
+
         .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
+            text-align: center;
+            margin-bottom: 30px;
         }
-        
+
         .footer-links a {
-            color: #B0C4DE;
+            color: #4A90E2;
             text-decoration: none;
+            font-size: 12px;
+            margin: 0 15px;
             transition: color 0.3s ease;
-            font-size: 0.95rem;
         }
-        
+
         .footer-links a:hover {
-            color: white;
+            color: #0A2540;
         }
-        
-        .footer-divider {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            margin: 2rem 0;
-        }
-        
-        .licenses-section {
-            margin: 2rem 0;
-        }
-        
-        .licenses-section h3 {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            font-family: 'Montserrat', sans-serif;
-        }
-        
+
         .licenses-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            font-size: 0.85rem;
-            line-height: 1.6;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
         }
-        
+
         .license-item {
-            padding: 0.5rem;
-            border-left: 3px solid var(--action-blue);
-            padding-left: 1rem;
+            font-size: 11px;
+            color: #666;
+            padding: 8px;
+            border-left: 2px solid #4A90E2;
+            padding-left: 12px;
         }
-        
+
         .disclaimer {
-            font-size: 0.85rem;
-            line-height: 1.8;
-            color: #B0C4DE;
-            margin-top: 2rem;
-        }
-        
-        .footer-bottom {
+            font-size: 11px;
+            color: #888;
+            line-height: 1.6;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
             text-align: center;
-            font-size: 0.85rem;
-            color: #B0C4DE;
-            margin-top: 2rem;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
-        /* Responsive */
+
+        /* ===== RESPONSIVE ===== */
         @media (max-width: 768px) {
-            .phone-display {
-                font-size: 1.8rem;
+            body {
+                padding: 30px 15px;
             }
-            
-            .section-header h2 {
-                font-size: 1.5rem;
+
+            .header {
+                margin-bottom: 40px;
             }
-            
-            .bio-card {
-                padding: 1.5rem;
+
+            .header-top {
+                flex-direction: column;
+                gap: 20px;
             }
-            
-            .cards-grid {
+
+            .phone-number-display {
+                font-size: 24px;
+            }
+
+            .section-title {
+                font-size: 18px;
+            }
+
+            .footer {
+                padding: 30px 15px;
+            }
+
+            .licenses-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .phone-number-display {
+                font-size: 20px;
+            }
+
+            .agent-name {
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 16px;
+            }
+
+            .product-icon-container {
+                width: 70px;
+                height: 70px;
+            }
+
+            .product-icon {
+                font-size: 32px;
+            }
+
+            .licenses-grid {
                 grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-            
-            .footer-links {
-                gap: 1rem;
-            }
-        }
-        
-        /* Accessibility */
-        a:focus, button:focus {
-            outline: 2px solid var(--action-blue);
-            outline-offset: 2px;
-        }
-        
-        /* Print Styles */
-        @media print {
-            header, footer {
-                background: white;
-                color: black;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="header-container">
-            <div class="logo-text">Gregory M. Sloan</div>
-            <div class="logo-text" style="font-size: 0.95rem; opacity: 0.9; font-weight: 500;">Licensed Life & Health Insurance Agent</div>
-            <div class="phone-display">844-INSURE-U</div>
-            <div class="phone-subtext">(844) 467-8738</div>
+    <div class="container">
+        <!-- HEADER SECTION -->
+        <div class="header">
+            <div class="header-top">
+                <div class="headshot-container">
+                    <img src="headshot.png" alt="Gregory M. Sloan" class="headshot">
+                </div>
+                <div class="branding">
+                    <div class="phone-number-display">844-INSURE-U</div>
+                    <div class="phone-number-display-small">(844) 467-8738</div>
+                    <div class="agent-name">Gregory M. Sloan</div>
+                    <div class="agent-title">CLU, ChFC</div>
+                </div>
+            </div>
         </div>
-    </header>
-    
-    <!-- Bio Section -->
-    <section class="bio-section">
-        <div class="bio-card">
-            <h2>Your Insurance Expert</h2>
-            <p>I specialize in helping clients bypass the traditional, invasive life insurance process. With decades of industry experience and top-tier financial designations (CLU, ChFC), I leverage modern carriers with accelerated underwriting to find high-limit policies that prioritize your speed and privacy. Skip the generic online engines and let me guide you to the exact right coverage for your family.</p>
+
+        <!-- BIO SECTION -->
+        <div class="bio-section">
+            <h1 class="bio-title">Your Insurance Expert</h1>
+            <p class="bio-text">
+                I specialize in helping clients bypass the traditional, invasive life insurance process. With decades of industry experience and top-tier financial designations (CLU, ChFC), I leverage modern carriers with accelerated underwriting to find high-limit policies that prioritize your speed and privacy. Skip the generic quote engines and let me guide you to the exact right coverage for your family.
+            </p>
+            <a href="tel:+18444678738" class="call-cta">Call Greg</a>
         </div>
-    </section>
-    
-    <!-- Individual Products Section -->
-    <section class="cards-container">
+
+        <!-- INDIVIDUAL COVERAGE SECTION -->
         <div class="section-header">
-            <h2>Individual Coverage</h2>
-            <p>Explore our comprehensive insurance solutions tailored to your needs</p>
+            <h2 class="section-title">Individual Coverage</h2>
+            <p class="section-subtitle">Explore comprehensive insurance solutions tailored to your needs</p>
         </div>
-        
-        <div class="cards-grid">
-            <!-- Life, Cancer, Critical Illness -->
+
+        <div class="products-grid">
+            <!-- Product 1 -->
             <div class="product-card">
-                <div class="card-icon">
-                    <i class="fas fa-heart"></i>
+                <div class="product-icon-container">
+                    <span class="product-icon">❤️</span>
                 </div>
-                <h3 class="card-title">Life, Cancer, Critical Illness</h3>
-                <p class="card-description">Comprehensive coverage protecting you and your family against life's uncertainties</p>
-                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=life-cancer-critical-illness" target="_blank" class="card-button">Explore Plans</a>
+                <h3 class="product-name">Life, Cancer, Critical Illness</h3>
+                <p class="product-description">Comprehensive coverage protecting you and your family</p>
+                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=life-cancer-critical-illness" target="_blank" rel="noopener noreferrer" class="product-button">Explore Plans</a>
             </div>
-            
-            <!-- Fixed-Benefit Indemnity -->
+
+            <!-- Product 2 -->
             <div class="product-card">
-                <div class="card-icon">
-                    <i class="fas fa-shield-alt"></i>
+                <div class="product-icon-container">
+                    <span class="product-icon">🛡️</span>
                 </div>
-                <h3 class="card-title">Fixed-Benefit Indemnity</h3>
-                <p class="card-description">Predictable benefits with fixed payouts for specific health events</p>
-                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=fixed-benefit-indemnity" target="_blank" class="card-button">Explore Plans</a>
+                <h3 class="product-name">Fixed-Benefit Indemnity</h3>
+                <p class="product-description">Predictable benefits with fixed payouts for specific health events</p>
+                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=fixed-benefit-indemnity" target="_blank" rel="noopener noreferrer" class="product-button">Explore Plans</a>
             </div>
-            
-            <!-- My LIFE Wellness -->
+
+            <!-- Product 3 -->
             <div class="product-card">
-                <div class="card-icon">
-                    <i class="fas fa-spa"></i>
+                <div class="product-icon-container">
+                    <span class="product-icon">💚</span>
                 </div>
-                <h3 class="card-title">My LIFE Wellness</h3>
-                <p class="card-description">Holistic wellness coverage combining health protection with lifestyle benefits</p>
-                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=my-life-wellness" target="_blank" class="card-button">Explore Plans</a>
+                <h3 class="product-name">My LIFE Wellness</h3>
+                <p class="product-description">Holistic wellness coverage combining health protection with lifestyle benefits</p>
+                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=my-life-wellness" target="_blank" rel="noopener noreferrer" class="product-button">Explore Plans</a>
             </div>
-            
-            <!-- Cancer Only -->
+
+            <!-- Product 4 -->
             <div class="product-card">
-                <div class="card-icon">
-                    <i class="fas fa-ribbon"></i>
+                <div class="product-icon-container">
+                    <span class="product-icon">🎯</span>
                 </div>
-                <h3 class="card-title">Cancer Only</h3>
-                <p class="card-description">Specialized cancer protection with focused benefits and support</p>
-                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=cancer-only" target="_blank" class="card-button">Explore Plans</a>
+                <h3 class="product-name">Cancer Only</h3>
+                <p class="product-description">Specialized cancer protection with dedicated benefits and support</p>
+                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=cancer-only" target="_blank" rel="noopener noreferrer" class="product-button">Explore Plans</a>
             </div>
         </div>
-    </section>
-    
-    <!-- Senior Products Section (Placeholder) -->
-    <section class="cards-container">
+
+        <!-- SENIOR COVERAGE SECTION -->
         <div class="section-header">
-            <h2>Senior Coverage</h2>
-            <p>Specialized insurance solutions for your retirement years</p>
+            <h2 class="section-title">Senior Coverage</h2>
+            <p class="section-subtitle">Specialized insurance solutions for your retirement years</p>
         </div>
-        
-        <div class="cards-grid">
+
+        <div class="products-grid">
+            <!-- Senior Product 1 -->
             <div class="product-card">
-                <div class="card-icon">
-                    <i class="fas fa-user-shield"></i>
+                <div class="product-icon-container">
+                    <span class="product-icon">👁️</span>
                 </div>
-                <h3 class="card-title">Senior Product 1</h3>
-                <p class="card-description">Tailored coverage for seniors with simplified underwriting</p>
-                <a href="#" target="_blank" class="card-button">See Rates</a>
+                <h3 class="product-name">Dental, Vision, Hearing</h3>
+                <p class="product-description">Comprehensive sensory health coverage for seniors</p>
+                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EStz6i1rrRK-1cNFDejrg8gz9OeMppYtGZ3eHUU7E1T86FO_-o0CkRuwLRXDyr0SHEDJg&product=dvh" target="_blank" rel="noopener noreferrer" class="product-button">View Rates</a>
             </div>
-            
+
+            <!-- Senior Product 2 -->
             <div class="product-card">
-                <div class="card-icon">
-                    <i class="fas fa-heartbeat"></i>
+                <div class="product-icon-container">
+                    <span class="product-icon">💰</span>
                 </div>
-                <h3 class="card-title">Senior Product 2</h3>
-                <p class="card-description">Health-focused coverage designed for active seniors</p>
-                <a href="#" target="_blank" class="card-button">See Rates</a>
+                <h3 class="product-name">Senior Indemnity</h3>
+                <p class="product-description">Affordable options with guaranteed acceptance for seniors</p>
+                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EStz6i1rrRK-1cNFDejrg8gz9OeMppYtGZ3eHUU7E1T86FO_-o0CkRuwLRXDyr0SHEDJg&product=senior-indemnity" target="_blank" rel="noopener noreferrer" class="product-button">View Rates</a>
             </div>
-            
+
+            <!-- Senior Product 3 -->
             <div class="product-card">
-                <div class="card-icon">
-                    <i class="fas fa-coins"></i>
+                <div class="product-icon-container">
+                    <span class="product-icon">🌟</span>
                 </div>
-                <h3 class="card-title">Senior Product 3</h3>
-                <p class="card-description">Affordable options with guaranteed acceptance</p>
-                <a href="#" target="_blank" class="card-button">See Rates</a>
+                <h3 class="product-name">My LIFE Senior</h3>
+                <p class="product-description">Premium wellness coverage designed for active seniors</p>
+                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EStz6i1rrRK-1cNFDejrg8gz9OeMppYtGZ3eHUU7E1T86FO_-o0CkRuwLRXDyr0SHEDJg&product=my-life-senior" target="_blank" rel="noopener noreferrer" class="product-button">View Rates</a>
             </div>
-            
+
+            <!-- Senior Product 4 -->
             <div class="product-card">
-                <div class="card-icon">
-                    <i class="fas fa-handshake"></i>
+                <div class="product-icon-container">
+                    <span class="product-icon">🎗️</span>
                 </div>
-                <h3 class="card-title">Senior Product 4</h3>
-                <p class="card-description">Comprehensive senior protection with family benefits</p>
-                <a href="#" target="_blank" class="card-button">See Rates</a>
+                <h3 class="product-name">Senior Cancer Only</h3>
+                <p class="product-description">Focused cancer protection for seniors with enhanced benefits</p>
+                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EStz6i1rrRK-1cNFDejrg8gz9OeMppYtGZ3eHUU7E1T86FO_-o0CkRuwLRXDyr0SHEDJg&product=cancer-only" target="_blank" rel="noopener noreferrer" class="product-button">View Rates</a>
             </div>
         </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
             <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Contact Us</a>
+                <a href="#privacy" target="_blank">Privacy Policy</a>
+                <a href="#terms" target="_blank">Terms of Service</a>
+                <a href="tel:+18444678738">Contact Us</a>
             </div>
-            
-            <div class="footer-divider"></div>
-            
-            <div class="licenses-section">
-                <h3>State Licenses & Designations</h3>
-                <div class="licenses-grid">
-                    <div class="license-item">Alabama (AL)</div>
-                    <div class="license-item">Alaska (AK)</div>
-                    <div class="license-item">Arizona (AZ)</div>
-                    <div class="license-item">Arkansas (AR)</div>
-                    <div class="license-item">California (CA)</div>
-                    <div class="license-item">Colorado (CO)</div>
-                    <div class="license-item">Connecticut (CT)</div>
-                    <div class="license-item">Delaware (DE)</div>
-                    <div class="license-item">Florida (FL)</div>
-                    <div class="license-item">Georgia (GA)</div>
-                    <div class="license-item">Hawaii (HI)</div>
-                    <div class="license-item">Idaho (ID)</div>
-                    <div class="license-item">Illinois (IL)</div>
-                    <div class="license-item">Indiana (IN)</div>
-                    <div class="license-item">Iowa (IA)</div>
-                    <div class="license-item">Kansas (KS)</div>
-                    <div class="license-item">Kentucky (KY)</div>
-                    <div class="license-item">Louisiana (LA)</div>
-                    <div class="license-item">Maine (ME)</div>
-                    <div class="license-item">Maryland (MD)</div>
-                    <div class="license-item">Massachusetts (MA)</div>
-                    <div class="license-item">Michigan (MI)</div>
-                    <div class="license-item">Minnesota (MN)</div>
-                    <div class="license-item">Mississippi (MS)</div>
-                    <div class="license-item">Missouri (MO)</div>
-                    <div class="license-item">Montana (MT)</div>
-                    <div class="license-item">Nebraska (NE)</div>
-                    <div class="license-item">Nevada (NV)</div>
-                    <div class="license-item">New Hampshire (NH)</div>
-                    <div class="license-item">New Jersey (NJ)</div>
-                    <div class="license-item">New Mexico (NM)</div>
-                    <div class="license-item">New York (NY)</div>
-                    <div class="license-item">North Carolina (NC)</div>
-                    <div class="license-item">North Dakota (ND)</div>
-                    <div class="license-item">Ohio (OH)</div>
-                    <div class="license-item">Oklahoma (OK)</div>
-                    <div class="license-item">Oregon (OR)</div>
-                    <div class="license-item">Pennsylvania (PA)</div>
-                    <div class="license-item">Rhode Island (RI)</div>
-                    <div class="license-item">South Carolina (SC)</div>
-                    <div class="license-item">South Dakota (SD)</div>
-                    <div class="license-item">Tennessee (TN)</div>
-                    <div class="license-item">Texas (TX)</div>
-                    <div class="license-item">Utah (UT)</div>
-                    <div class="license-item">Vermont (VT)</div>
-                    <div class="license-item">Virginia (VA)</div>
-                    <div class="license-item">Washington (WA)</div>
-                    <div class="license-item">West Virginia (WV)</div>
-                    <div class="license-item">Wisconsin (WI)</div>
-                    <div class="license-item">Wyoming (WY)</div>
-                </div>
+
+            <div class="licenses-grid">
+                <div class="license-item">Alabama (AL)</div>
+                <div class="license-item">Alaska (AK)</div>
+                <div class="license-item">Arizona (AZ)</div>
+                <div class="license-item">Arkansas (AR)</div>
+                <div class="license-item">California (CA)</div>
+                <div class="license-item">Colorado (CO)</div>
+                <div class="license-item">Connecticut (CT)</div>
+                <div class="license-item">Delaware (DE)</div>
+                <div class="license-item">Florida (FL)</div>
+                <div class="license-item">Georgia (GA)</div>
+                <div class="license-item">Hawaii (HI)</div>
+                <div class="license-item">Idaho (ID)</div>
+                <div class="license-item">Illinois (IL)</div>
+                <div class="license-item">Indiana (IN)</div>
+                <div class="license-item">Iowa (IA)</div>
+                <div class="license-item">Kansas (KS)</div>
+                <div class="license-item">Kentucky (KY)</div>
+                <div class="license-item">Louisiana (LA)</div>
+                <div class="license-item">Maine (ME)</div>
+                <div class="license-item">Maryland (MD)</div>
+                <div class="license-item">Massachusetts (MA)</div>
+                <div class="license-item">Michigan (MI)</div>
+                <div class="license-item">Minnesota (MN)</div>
+                <div class="license-item">Mississippi (MS)</div>
+                <div class="license-item">Missouri (MO)</div>
+                <div class="license-item">Montana (MT)</div>
+                <div class="license-item">Nebraska (NE)</div>
+                <div class="license-item">Nevada (NV)</div>
+                <div class="license-item">New Hampshire (NH)</div>
+                <div class="license-item">New Jersey (NJ)</div>
+                <div class="license-item">New Mexico (NM)</div>
+                <div class="license-item">New York (NY)</div>
+                <div class="license-item">North Carolina (NC)</div>
+                <div class="license-item">North Dakota (ND)</div>
+                <div class="license-item">Ohio (OH)</div>
+                <div class="license-item">Oklahoma (OK)</div>
+                <div class="license-item">Oregon (OR)</div>
+                <div class="license-item">Pennsylvania (PA)</div>
+                <div class="license-item">Rhode Island (RI)</div>
+                <div class="license-item">South Carolina (SC)</div>
+                <div class="license-item">South Dakota (SD)</div>
+                <div class="license-item">Tennessee (TN)</div>
+                <div class="license-item">Texas (TX)</div>
+                <div class="license-item">Utah (UT)</div>
+                <div class="license-item">Vermont (VT)</div>
+                <div class="license-item">Virginia (VA)</div>
+                <div class="license-item">Washington (WA)</div>
+                <div class="license-item">West Virginia (WV)</div>
+                <div class="license-item">Wisconsin (WI)</div>
+                <div class="license-item">Wyoming (WY)</div>
+                <div class="license-item">Washington D.C. (DC)</div>
             </div>
-            
-            <div class="footer-divider"></div>
-            
+
             <div class="disclaimer">
-                <strong>Compliance & Disclosure:</strong> Gregory M. Sloan is a licensed life and health insurance agent. The information provided on this site is intended for general educational and informational purposes only and should not be construed as legal, tax, or investment advice. Clients are encouraged to consult with their own legal or tax professionals regarding their specific situations. All insurance estimates provided are for illustrative purposes only. Final rates and policy approvals are strictly subject to the full medical and financial underwriting requirements of the issuing insurance carrier. Gregory M. Sloan Insurance Agency LLC cannot guarantee policy issuance or specific premium rates prior to formal carrier approval.
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2026 Gregory M. Sloan Insurance Agency. All rights reserved. | CLU, ChFC</p>
+                <strong>Compliance & Disclaimer:</strong> Gregory M. Sloan is a licensed Life & Health Insurance Agent. The information provided on this site is intended for general educational and informational purposes only and should not be construed as legal, tax, or financial advice. All insurance policies are subject to underwriting approval and individual circumstances. Final rates and policy terms are subject to the full application and financial underwriting requirements. This website is available only to residents of the United States (including Hawaii and Alaska) and Washington D.C. All insurance policies are subject to the full application and financial underwriting requirements. All insurance information provided are for illustrative purposes only. Final rates and policy terms are subject to the full application and financial underwriting requirements of the specific insurance carrier. Gregory M. Sloan is a licensed insurance agent. Gregory M Sloan Insurance Agency LLC is not affiliated with any specific insurance carrier. All product names, logos, and brands are the property of their respective owners.
             </div>
         </div>
     </footer>
+
+    <!-- JSON-LD Schema for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FinancialService",
+        "name": "Gregory M. Sloan, CLU, ChFC",
+        "description": "Licensed Life & Health Insurance Agent specializing in supplemental health, life, and critical illness insurance",
+        "url": "https://official844insureu.com",
+        "telephone": "+1-844-467-8738",
+        "areaServed": "US",
+        "knowsAbout": ["Life Insurance", "Health Insurance", "Critical Illness Insurance", "Cancer Insurance"],
+        "credentials": ["CLU", "ChFC"]
+    }
+    </script>
 </body>
 </html>
