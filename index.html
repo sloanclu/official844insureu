@@ -236,9 +236,9 @@
 
         /* ===== FOOTER ===== */
         .footer {
-            background-color: #ffffff;
-            border-top: 1px solid #e8e8e8;
-            padding: 40px 20px;
+            background-color: #3a4a5c;
+            border-top: none;
+            padding: 40px 20px 30px;
             margin-top: 80px;
         }
 
@@ -247,50 +247,56 @@
             margin: 0 auto;
         }
 
+        .footer-call {
+            text-align: center;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            letter-spacing: 0.3px;
+        }
+
         .footer-links {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .footer-links a {
-            color: #4A90E2;
+            color: #ffffff;
             text-decoration: none;
             font-size: 12px;
-            margin: 0 15px;
+            margin: 0 20px;
             transition: color 0.3s ease;
         }
 
         .footer-links a:hover {
-            color: #0A2540;
+            color: #b0c4de;
         }
 
-        /* ===== COMPACT LICENSE GRID ===== */
-        .licenses-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 12px;
-            margin: 30px 0;
-            padding: 20px;
+        /* ===== STATE LICENSES SECTION ===== */
+        .licenses-section {
+            font-size: 11px;
+            color: #b0c4de;
+            line-height: 1.6;
+            margin: 20px 0;
+            padding: 0;
             background-color: transparent;
+            text-align: center;
         }
 
         .license-item {
-            font-size: 10px;
-            color: #999;
-            padding: 4px;
-            text-align: center;
-            line-height: 1.3;
+            display: inline;
+            margin: 0;
+            padding: 0;
         }
 
-        .disclaimer {
+        .copyright {
             font-size: 11px;
-            color: #888;
-            line-height: 1.6;
-            margin-top: 20px;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 4px;
+            color: #999;
             text-align: center;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #555;
         }
 
         /* ===== RESPONSIVE ===== */
@@ -315,9 +321,8 @@
                 padding: 30px 15px;
             }
 
-            .licenses-grid {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 10px;
+            .licenses-section {
+                font-size: 10px;
             }
         }
 
@@ -347,12 +352,11 @@
                 font-size: 32px;
             }
 
-            .licenses-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 8px;
+            .footer-call {
+                font-size: 12px;
             }
 
-            .license-item {
+            .licenses-section {
                 font-size: 9px;
             }
         }
@@ -480,70 +484,19 @@
         <!-- FOOTER -->
         <footer class="footer">
             <div class="footer-content">
+                <div class="footer-call">Call Greg Now (844) 467-8738</div>
+                
                 <div class="footer-links">
                     <a href="/privacy-policy" target="_blank">Privacy Policy</a>
-                    <a href="/terms-of-service" target="_blank">Terms of Service</a>
-                    <a href="tel:+18444678738">Contact Us</a>
+                    <a href="/terms-of-service" target="_blank">Terms of Use</a>
                 </div>
 
-                <h3 style="font-size: 13px; color: #0A2540; margin-bottom: 15px; text-align: center;">State Licenses & Designations</h3>
-                
-                <div class="licenses-grid">
-                    <div class="license-item">Alabama (AL)</div>
-                    <div class="license-item">Alaska (AK)</div>
-                    <div class="license-item">Arizona (AZ)</div>
-                    <div class="license-item">Arkansas (AR)</div>
-                    <div class="license-item">California (CA)</div>
-                    <div class="license-item">Colorado (CO)</div>
-                    <div class="license-item">Connecticut (CT)</div>
-                    <div class="license-item">Delaware (DE)</div>
-                    <div class="license-item">Florida (FL)</div>
-                    <div class="license-item">Georgia (GA)</div>
-                    <div class="license-item">Hawaii (HI)</div>
-                    <div class="license-item">Idaho (ID)</div>
-                    <div class="license-item">Illinois (IL)</div>
-                    <div class="license-item">Indiana (IN)</div>
-                    <div class="license-item">Iowa (IA)</div>
-                    <div class="license-item">Kansas (KS)</div>
-                    <div class="license-item">Kentucky (KY)</div>
-                    <div class="license-item">Louisiana (LA)</div>
-                    <div class="license-item">Maine (ME)</div>
-                    <div class="license-item">Maryland (MD)</div>
-                    <div class="license-item">Massachusetts (MA)</div>
-                    <div class="license-item">Michigan (MI)</div>
-                    <div class="license-item">Minnesota (MN)</div>
-                    <div class="license-item">Mississippi (MS)</div>
-                    <div class="license-item">Missouri (MO)</div>
-                    <div class="license-item">Montana (MT)</div>
-                    <div class="license-item">Nebraska (NE)</div>
-                    <div class="license-item">Nevada (NV)</div>
-                    <div class="license-item">New Hampshire (NH)</div>
-                    <div class="license-item">New Jersey (NJ)</div>
-                    <div class="license-item">New Mexico (NM)</div>
-                    <div class="license-item">New York (NY)</div>
-                    <div class="license-item">North Carolina (NC)</div>
-                    <div class="license-item">North Dakota (ND)</div>
-                    <div class="license-item">Ohio (OH)</div>
-                    <div class="license-item">Oklahoma (OK)</div>
-                    <div class="license-item">Oregon (OR)</div>
-                    <div class="license-item">Pennsylvania (PA)</div>
-                    <div class="license-item">Rhode Island (RI)</div>
-                    <div class="license-item">South Carolina (SC)</div>
-                    <div class="license-item">South Dakota (SD)</div>
-                    <div class="license-item">Tennessee (TN)</div>
-                    <div class="license-item">Texas (TX)</div>
-                    <div class="license-item">Utah (UT)</div>
-                    <div class="license-item">Vermont (VT)</div>
-                    <div class="license-item">Virginia (VA)</div>
-                    <div class="license-item">Washington (WA)</div>
-                    <div class="license-item">West Virginia (WV)</div>
-                    <div class="license-item">Wisconsin (WI)</div>
-                    <div class="license-item">Wyoming (WY)</div>
-                    <div class="license-item">Washington D.C. (DC)</div>
+                <div class="licenses-section">
+                    <span class="license-item">State Licenses: Gregory Sloan NPN: 2145633 | AL: 2120795 | AZ: 2145633 | AR: 2145633 | CA: 0056287 | CO: 674464 | CT: 2145633 | DE: 3002204744 | DC: 3001194986 | FL: P049737 | GA: 691049 | HI: 2145633 | ID: 2145633 | IL: 2145633 | IN: 383256 | IA: 2145633 | KS: 2145633 | KY: DGL 582845 | LA: 586989 | ME: PPN313085 | MD: 2084972 | MA: 2145633 | MI: 2145633 | MN: 2145633 | MS: 2145633 | MO: 2145633 | MT: 3000834623 | NE: 2145633 | NV: 187701 | NJ: 3000637570 | NM: 2145633 | NY: LA-1487931 | NC: 2145633 | ND: 2145633 | OH: 594399 | OK: 3000302658 | OR: 2145633 | PA: 33554S | RI: 3001986914 | SC: 2145633 | SD: 2145633 | TN: 2406242 | TX: 1273106 | UT: 830274 | VA: 827910 | WA: 825107 | WI: 2145633 | WI: 2145633 | WY: 374513</span>
                 </div>
 
-                <div class="disclaimer">
-                    <strong>Compliance & Disclaimer:</strong> Gregory M. Sloan is a licensed Life & Health Insurance Agent. The information provided on this website is for educational and informational purposes only and does not constitute an offer of insurance. No insurance policy is issued until a complete application is submitted, underwriting review is completed, the application is approved by the insurance carrier, and payment is received. All insurance policies are contracts between the policyholder and the insurance carrier, not with Gregory M. Sloan or Gregory M. Sloan Insurance Agency LLC. All insurance products are subject to underwriting approval based on individual circumstances, health status, financial information, and other factors determined by the insurance carrier. This website and all services are provided in compliance with applicable federal and state laws and regulations governing insurance agents and agencies.
+                <div class="copyright">
+                    © 2026 Gregory M Sloan. All rights reserved.
                 </div>
             </div>
         </footer>
