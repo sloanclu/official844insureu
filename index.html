@@ -42,19 +42,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 30px;
-        }
-
-        .header-top {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
+            gap: 25px;
         }
 
         .headshot-container {
             flex-shrink: 0;
+            margin-bottom: 10px;
         }
 
         .headshot {
@@ -64,43 +57,35 @@
             object-fit: cover;
             border: 3px solid #0A2540;
             box-shadow: 0 4px 12px rgba(10, 37, 64, 0.15);
+            display: block;
         }
 
+        /* ===== BRANDING GRAPHIC ===== */
         .branding {
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
         }
 
-        .phone-number-display {
-            font-size: 28px;
-            font-weight: 700;
-            color: #0A2540;
-            letter-spacing: -0.5px;
-            margin-bottom: 8px;
-            font-family: 'Courier New', monospace;
-        }
-
-        .phone-number-display-small {
-            font-size: 16px;
-            color: #555;
-            font-weight: 500;
-            letter-spacing: 0.5px;
+        .brand-logo-img {
+            max-width: 320px;
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         .agent-name {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
             color: #0A2540;
-            margin-top: 16px;
+            margin-top: 14px;
             letter-spacing: 0.3px;
         }
 
         .agent-title {
-            font-size: 13px;
-            color: #888;
-            margin-top: 4px;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            display: none;
         }
 
         /* ===== BIO SECTION ===== */
@@ -128,7 +113,7 @@
         .call-cta {
             display: inline-block;
             padding: 10px 24px;
-            background: linear-gradient(to bottom, #f5f5f5, #e8e8e8);
+            background: linear-gradient(to bottom, #f8f8f8, #e8e8e8);
             color: #1a1a1a;
             text-decoration: none;
             border-radius: 4px;
@@ -140,7 +125,7 @@
         }
 
         .call-cta:hover {
-            background: linear-gradient(to bottom, #efefef, #ddd);
+            background: linear-gradient(to bottom, #f0f0f0, #ddd);
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
@@ -192,7 +177,7 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            gap: 16px;
+            gap: 12px;
         }
 
         .product-icon-container {
@@ -216,22 +201,22 @@
             font-size: 15px;
             font-weight: 600;
             color: #0A2540;
-            line-height: 1.4;
+            line-height: 1.3;
         }
 
         .product-description {
             font-size: 12px;
             color: #888;
-            line-height: 1.5;
-            min-height: 36px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            line-height: 1.4;
+            min-height: 18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
 
         .product-button {
             padding: 8px 20px;
-            background: linear-gradient(to bottom, #f5f5f5, #e8e8e8);
+            background: linear-gradient(to bottom, #f8f8f8, #e8e8e8);
             color: #1a1a1a;
             text-decoration: none;
             border-radius: 3px;
@@ -245,7 +230,7 @@
         }
 
         .product-button:hover {
-            background: linear-gradient(to bottom, #efefef, #ddd);
+            background: linear-gradient(to bottom, #f0f0f0, #ddd);
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
 
@@ -279,29 +264,29 @@
             color: #0A2540;
         }
 
+        /* ===== COMPACT LICENSE GRID ===== */
         .licenses-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 12px;
             margin: 30px 0;
             padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 4px;
+            background-color: transparent;
         }
 
         .license-item {
-            font-size: 11px;
-            color: #666;
-            padding: 8px;
-            border-left: 2px solid #4A90E2;
-            padding-left: 12px;
+            font-size: 10px;
+            color: #999;
+            padding: 4px;
+            text-align: center;
+            line-height: 1.3;
         }
 
         .disclaimer {
             font-size: 11px;
             color: #888;
             line-height: 1.6;
-            margin-top: 30px;
+            margin-top: 20px;
             padding: 20px;
             background-color: #f9f9f9;
             border-radius: 4px;
@@ -318,13 +303,8 @@
                 margin-bottom: 40px;
             }
 
-            .header-top {
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            .phone-number-display {
-                font-size: 24px;
+            .brand-logo-img {
+                max-width: 260px;
             }
 
             .section-title {
@@ -336,7 +316,8 @@
             }
 
             .licenses-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
             }
         }
 
@@ -345,12 +326,12 @@
                 padding: 20px 10px;
             }
 
-            .phone-number-display {
-                font-size: 20px;
+            .brand-logo-img {
+                max-width: 220px;
             }
 
             .agent-name {
-                font-size: 16px;
+                font-size: 14px;
             }
 
             .section-title {
@@ -367,25 +348,27 @@
             }
 
             .licenses-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+
+            .license-item {
+                font-size: 9px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- HEADER SECTION -->
+        <!-- HEADER WITH HEADSHOT AND BRANDING -->
         <div class="header">
-            <div class="header-top">
-                <div class="headshot-container">
-                    <img src="headshot.png" alt="Gregory M. Sloan" class="headshot">
-                </div>
-                <div class="branding">
-                    <div class="phone-number-display">844-INSURE-U</div>
-                    <div class="phone-number-display-small">(844) 467-8738</div>
-                    <div class="agent-name">Gregory M. Sloan</div>
-                    <div class="agent-title">CLU, ChFC</div>
-                </div>
+            <div class="headshot-container">
+                <img src="headshot.png" alt="Gregory M. Sloan" class="headshot">
+            </div>
+            
+            <div class="branding">
+                <img src="brand-logo.png" alt="844-INSURE-U | (844) 467-8738" class="brand-logo-img">
+                <div class="agent-name">Gregory M. Sloan, CLU, ChFC</div>
             </div>
         </div>
 
@@ -395,7 +378,7 @@
             <p class="bio-text">
                 I specialize in helping clients bypass the traditional, invasive life insurance process. With decades of industry experience and top-tier financial designations (CLU, ChFC), I leverage modern carriers with accelerated underwriting to find high-limit policies that prioritize your speed and privacy. Skip the generic quote engines and let me guide you to the exact right coverage for your family.
             </p>
-            <a href="tel:+18444678738" class="call-cta">Call Greg</a>
+            <a href="tel:+18444678738" class="call-cta">Speak with a Strategist</a>
         </div>
 
         <!-- INDIVIDUAL COVERAGE SECTION -->
@@ -412,7 +395,7 @@
                 </div>
                 <h3 class="product-name">Life, Cancer, Critical Illness</h3>
                 <p class="product-description">Comprehensive coverage protecting you and your family</p>
-                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=life-cancer-critical-illness" target="_blank" rel="noopener noreferrer" class="product-button">Explore Plans</a>
+                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=life-cancer-critical-illness" target="_blank" class="product-button">Explore Plans</a>
             </div>
 
             <!-- Product 2 -->
@@ -422,7 +405,7 @@
                 </div>
                 <h3 class="product-name">Fixed-Benefit Indemnity</h3>
                 <p class="product-description">Predictable benefits with fixed payouts for specific health events</p>
-                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=fixed-benefit-indemnity" target="_blank" rel="noopener noreferrer" class="product-button">Explore Plans</a>
+                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=fixed-benefit-indemnity" target="_blank" class="product-button">Explore Plans</a>
             </div>
 
             <!-- Product 3 -->
@@ -432,7 +415,7 @@
                 </div>
                 <h3 class="product-name">My LIFE Wellness</h3>
                 <p class="product-description">Holistic wellness coverage combining health protection with lifestyle benefits</p>
-                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=my-life-wellness" target="_blank" rel="noopener noreferrer" class="product-button">Explore Plans</a>
+                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=my-life-wellness" target="_blank" class="product-button">Explore Plans</a>
             </div>
 
             <!-- Product 4 -->
@@ -442,7 +425,7 @@
                 </div>
                 <h3 class="product-name">Cancer Only</h3>
                 <p class="product-description">Specialized cancer protection with dedicated benefits and support</p>
-                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=cancer-only" target="_blank" rel="noopener noreferrer" class="product-button">Explore Plans</a>
+                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=cancer-only" target="_blank" class="product-button">Explore Plans</a>
             </div>
         </div>
 
@@ -460,7 +443,7 @@
                 </div>
                 <h3 class="product-name">Dental, Vision, Hearing</h3>
                 <p class="product-description">Comprehensive sensory health coverage for seniors</p>
-                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EStz6i1rrRK-1cNFDejrg8gz9OeMppYtGZ3eHUU7E1T86FO_-o0CkRuwLRXDyr0SHEDJg&product=dvh" target="_blank" rel="noopener noreferrer" class="product-button">View Rates</a>
+                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EStz6i1rrRK-1cNFDejrg8gz9OeMppYtGZ3eHUU7E1T86FO_-o0CkRuwLRXDyr0SHEDJg&product=dvh" target="_blank" class="product-button">View Rates</a>
             </div>
 
             <!-- Senior Product 2 -->
@@ -470,7 +453,7 @@
                 </div>
                 <h3 class="product-name">Senior Indemnity</h3>
                 <p class="product-description">Affordable options with guaranteed acceptance for seniors</p>
-                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EStz6i1rrRK-1cNFDejrg8gz9OeMppYtGZ3eHUU7E1T86FO_-o0CkRuwLRXDyr0SHEDJg&product=senior-indemnity" target="_blank" rel="noopener noreferrer" class="product-button">View Rates</a>
+                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EStz6i1rrRK-1cNFDejrg8gz9OeMppYtGZ3eHUU7E1T86FO_-o0CkRuwLRXDyr0SHEDJg&product=senior-indemnity" target="_blank" class="product-button">View Rates</a>
             </div>
 
             <!-- Senior Product 3 -->
@@ -480,7 +463,7 @@
                 </div>
                 <h3 class="product-name">My LIFE Senior</h3>
                 <p class="product-description">Premium wellness coverage designed for active seniors</p>
-                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EStz6i1rrRK-1cNFDejrg8gz9OeMppYtGZ3eHUU7E1T86FO_-o0CkRuwLRXDyr0SHEDJg&product=my-life-senior" target="_blank" rel="noopener noreferrer" class="product-button">View Rates</a>
+                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EStz6i1rrRK-1cNFDejrg8gz9OeMppYtGZ3eHUU7E1T86FO_-o0CkRuwLRXDyr0SHEDJg&product=my-life-senior" target="_blank" class="product-button">View Rates</a>
             </div>
 
             <!-- Senior Product 4 -->
@@ -490,92 +473,94 @@
                 </div>
                 <h3 class="product-name">Senior Cancer Only</h3>
                 <p class="product-description">Focused cancer protection for seniors with enhanced benefits</p>
-                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EStz6i1rrRK-1cNFDejrg8gz9OeMppYtGZ3eHUU7E1T86FO_-o0CkRuwLRXDyr0SHEDJg&product=cancer-only" target="_blank" rel="noopener noreferrer" class="product-button">View Rates</a>
+                <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EStz6i1rrRK-1cNFDejrg8gz9OeMppYtGZ3eHUU7E1T86FO_-o0CkRuwLRXDyr0SHEDJg&product=cancer-only" target="_blank" class="product-button">View Rates</a>
             </div>
         </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="/privacy-policy" target="_blank">Privacy Policy</a>
+                    <a href="/terms-of-service" target="_blank">Terms of Service</a>
+                    <a href="tel:+18444678738">Contact Us</a>
+                </div>
+
+                <h3 style="font-size: 13px; color: #0A2540; margin-bottom: 15px; text-align: center;">State Licenses & Designations</h3>
+                
+                <div class="licenses-grid">
+                    <div class="license-item">Alabama (AL)</div>
+                    <div class="license-item">Alaska (AK)</div>
+                    <div class="license-item">Arizona (AZ)</div>
+                    <div class="license-item">Arkansas (AR)</div>
+                    <div class="license-item">California (CA)</div>
+                    <div class="license-item">Colorado (CO)</div>
+                    <div class="license-item">Connecticut (CT)</div>
+                    <div class="license-item">Delaware (DE)</div>
+                    <div class="license-item">Florida (FL)</div>
+                    <div class="license-item">Georgia (GA)</div>
+                    <div class="license-item">Hawaii (HI)</div>
+                    <div class="license-item">Idaho (ID)</div>
+                    <div class="license-item">Illinois (IL)</div>
+                    <div class="license-item">Indiana (IN)</div>
+                    <div class="license-item">Iowa (IA)</div>
+                    <div class="license-item">Kansas (KS)</div>
+                    <div class="license-item">Kentucky (KY)</div>
+                    <div class="license-item">Louisiana (LA)</div>
+                    <div class="license-item">Maine (ME)</div>
+                    <div class="license-item">Maryland (MD)</div>
+                    <div class="license-item">Massachusetts (MA)</div>
+                    <div class="license-item">Michigan (MI)</div>
+                    <div class="license-item">Minnesota (MN)</div>
+                    <div class="license-item">Mississippi (MS)</div>
+                    <div class="license-item">Missouri (MO)</div>
+                    <div class="license-item">Montana (MT)</div>
+                    <div class="license-item">Nebraska (NE)</div>
+                    <div class="license-item">Nevada (NV)</div>
+                    <div class="license-item">New Hampshire (NH)</div>
+                    <div class="license-item">New Jersey (NJ)</div>
+                    <div class="license-item">New Mexico (NM)</div>
+                    <div class="license-item">New York (NY)</div>
+                    <div class="license-item">North Carolina (NC)</div>
+                    <div class="license-item">North Dakota (ND)</div>
+                    <div class="license-item">Ohio (OH)</div>
+                    <div class="license-item">Oklahoma (OK)</div>
+                    <div class="license-item">Oregon (OR)</div>
+                    <div class="license-item">Pennsylvania (PA)</div>
+                    <div class="license-item">Rhode Island (RI)</div>
+                    <div class="license-item">South Carolina (SC)</div>
+                    <div class="license-item">South Dakota (SD)</div>
+                    <div class="license-item">Tennessee (TN)</div>
+                    <div class="license-item">Texas (TX)</div>
+                    <div class="license-item">Utah (UT)</div>
+                    <div class="license-item">Vermont (VT)</div>
+                    <div class="license-item">Virginia (VA)</div>
+                    <div class="license-item">Washington (WA)</div>
+                    <div class="license-item">West Virginia (WV)</div>
+                    <div class="license-item">Wisconsin (WI)</div>
+                    <div class="license-item">Wyoming (WY)</div>
+                    <div class="license-item">Washington D.C. (DC)</div>
+                </div>
+
+                <div class="disclaimer">
+                    <strong>Compliance & Disclaimer:</strong> Gregory M. Sloan is a licensed Life & Health Insurance Agent. The information provided on this website is for educational and informational purposes only and does not constitute an offer of insurance. No insurance policy is issued until a complete application is submitted, underwriting review is completed, the application is approved by the insurance carrier, and payment is received. All insurance policies are contracts between the policyholder and the insurance carrier, not with Gregory M. Sloan or Gregory M. Sloan Insurance Agency LLC. All insurance products are subject to underwriting approval based on individual circumstances, health status, financial information, and other factors determined by the insurance carrier. This website and all services are provided in compliance with applicable federal and state laws and regulations governing insurance agents and agencies.
+                </div>
+            </div>
+        </footer>
     </div>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="#privacy" target="_blank">Privacy Policy</a>
-                <a href="#terms" target="_blank">Terms of Service</a>
-                <a href="tel:+18444678738">Contact Us</a>
-            </div>
-
-            <div class="licenses-grid">
-                <div class="license-item">Alabama (AL)</div>
-                <div class="license-item">Alaska (AK)</div>
-                <div class="license-item">Arizona (AZ)</div>
-                <div class="license-item">Arkansas (AR)</div>
-                <div class="license-item">California (CA)</div>
-                <div class="license-item">Colorado (CO)</div>
-                <div class="license-item">Connecticut (CT)</div>
-                <div class="license-item">Delaware (DE)</div>
-                <div class="license-item">Florida (FL)</div>
-                <div class="license-item">Georgia (GA)</div>
-                <div class="license-item">Hawaii (HI)</div>
-                <div class="license-item">Idaho (ID)</div>
-                <div class="license-item">Illinois (IL)</div>
-                <div class="license-item">Indiana (IN)</div>
-                <div class="license-item">Iowa (IA)</div>
-                <div class="license-item">Kansas (KS)</div>
-                <div class="license-item">Kentucky (KY)</div>
-                <div class="license-item">Louisiana (LA)</div>
-                <div class="license-item">Maine (ME)</div>
-                <div class="license-item">Maryland (MD)</div>
-                <div class="license-item">Massachusetts (MA)</div>
-                <div class="license-item">Michigan (MI)</div>
-                <div class="license-item">Minnesota (MN)</div>
-                <div class="license-item">Mississippi (MS)</div>
-                <div class="license-item">Missouri (MO)</div>
-                <div class="license-item">Montana (MT)</div>
-                <div class="license-item">Nebraska (NE)</div>
-                <div class="license-item">Nevada (NV)</div>
-                <div class="license-item">New Hampshire (NH)</div>
-                <div class="license-item">New Jersey (NJ)</div>
-                <div class="license-item">New Mexico (NM)</div>
-                <div class="license-item">New York (NY)</div>
-                <div class="license-item">North Carolina (NC)</div>
-                <div class="license-item">North Dakota (ND)</div>
-                <div class="license-item">Ohio (OH)</div>
-                <div class="license-item">Oklahoma (OK)</div>
-                <div class="license-item">Oregon (OR)</div>
-                <div class="license-item">Pennsylvania (PA)</div>
-                <div class="license-item">Rhode Island (RI)</div>
-                <div class="license-item">South Carolina (SC)</div>
-                <div class="license-item">South Dakota (SD)</div>
-                <div class="license-item">Tennessee (TN)</div>
-                <div class="license-item">Texas (TX)</div>
-                <div class="license-item">Utah (UT)</div>
-                <div class="license-item">Vermont (VT)</div>
-                <div class="license-item">Virginia (VA)</div>
-                <div class="license-item">Washington (WA)</div>
-                <div class="license-item">West Virginia (WV)</div>
-                <div class="license-item">Wisconsin (WI)</div>
-                <div class="license-item">Wyoming (WY)</div>
-                <div class="license-item">Washington D.C. (DC)</div>
-            </div>
-
-            <div class="disclaimer">
-                <strong>Compliance & Disclaimer:</strong> Gregory M. Sloan is a licensed Life & Health Insurance Agent. The information provided on this site is intended for general educational and informational purposes only and should not be construed as legal, tax, or financial advice. All insurance policies are subject to underwriting approval and individual circumstances. Final rates and policy terms are subject to the full application and financial underwriting requirements. This website is available only to residents of the United States (including Hawaii and Alaska) and Washington D.C. All insurance policies are subject to the full application and financial underwriting requirements. All insurance information provided are for illustrative purposes only. Final rates and policy terms are subject to the full application and financial underwriting requirements of the specific insurance carrier. Gregory M. Sloan is a licensed insurance agent. Gregory M Sloan Insurance Agency LLC is not affiliated with any specific insurance carrier. All product names, logos, and brands are the property of their respective owners.
-            </div>
-        </div>
-    </footer>
 
     <!-- JSON-LD Schema for SEO -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "FinancialService",
-        "name": "Gregory M. Sloan, CLU, ChFC",
+        "@type": "LocalBusiness",
+        "name": "Gregory M. Sloan Insurance Agency",
         "description": "Licensed Life & Health Insurance Agent specializing in supplemental health, life, and critical illness insurance",
-        "url": "https://official844insureu.com",
         "telephone": "+1-844-467-8738",
+        "url": "https://official844insureu.com",
         "areaServed": "US",
-        "knowsAbout": ["Life Insurance", "Health Insurance", "Critical Illness Insurance", "Cancer Insurance"],
-        "credentials": ["CLU", "ChFC"]
+        "priceRange": "$$",
+        "knowsAbout": ["Life Insurance", "Health Insurance", "Critical Illness Insurance", "Cancer Insurance", "Supplemental Insurance"]
     }
     </script>
 </body>
