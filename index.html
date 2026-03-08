@@ -19,7 +19,6 @@
 
         html, body {
             width: 100%;
-            height: 100%;
             background-color: #ffffff;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             color: #1a1a1a;
@@ -27,113 +26,44 @@
         }
 
         body {
-            padding: 40px 20px;
+            padding: 0;
         }
 
+        /* ===== TOP BAR with oblong phone graphic ===== */
+        .top-bar {
+            position: relative;
+            width: 100%;
+            padding: 12px 30px;
+            background: #ffffff;
+            border-bottom: 1px solid #e8e8e8;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .phone-oblong-link {
+            display: block;
+            text-decoration: none;
+        }
+
+        .phone-oblong-img {
+            height: 52px;
+            width: auto;
+            display: block;
+        }
+
+        /* ===== MAIN CONTAINER ===== */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-        }
-
-        /* ===== HEADER SECTION ===== */
-        .header {
-            text-align: center;
-            margin-bottom: 60px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 25px;
-        }
-
-        .headshot-container {
-            flex-shrink: 0;
-            margin-bottom: 10px;
-        }
-
-        .headshot {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #0A2540;
-            box-shadow: 0 4px 12px rgba(10, 37, 64, 0.15);
-            display: block;
-        }
-
-        /* ===== BRANDING GRAPHIC ===== */
-        .branding {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .brand-logo-img {
-            max-width: 320px;
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .agent-name {
-            font-size: 16px;
-            font-weight: 600;
-            color: #0A2540;
-            margin-top: 14px;
-            letter-spacing: 0.3px;
-        }
-
-        .agent-title {
-            display: none;
-        }
-
-        /* ===== BIO SECTION ===== */
-        .bio-section {
-            max-width: 700px;
-            margin: 0 auto 60px;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .bio-title {
-            font-size: 20px;
-            font-weight: 600;
-            color: #0A2540;
-            margin-bottom: 12px;
-        }
-
-        .bio-text {
-            font-size: 14px;
-            color: #555;
-            line-height: 1.7;
-            margin-bottom: 16px;
-        }
-
-        .call-cta {
-            display: inline-block;
-            padding: 10px 24px;
-            background: linear-gradient(to bottom, #f8f8f8, #e8e8e8);
-            color: #1a1a1a;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 13px;
-            font-weight: 600;
-            border: 1px solid #d0d0d0;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .call-cta:hover {
-            background: linear-gradient(to bottom, #f0f0f0, #ddd);
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px 20px;
         }
 
         /* ===== SECTION HEADERS ===== */
         .section-header {
             text-align: center;
             margin-bottom: 40px;
-            margin-top: 60px;
+            margin-top: 20px;
         }
 
         .section-title {
@@ -152,9 +82,9 @@
         /* ===== GRID LAYOUT ===== */
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 40px;
-            margin-bottom: 60px;
+            margin-bottom: 20px;
         }
 
         @media (max-width: 1024px) {
@@ -194,7 +124,6 @@
 
         .product-icon {
             font-size: 40px;
-            color: #4A90E2;
         }
 
         .product-name {
@@ -212,6 +141,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            max-width: 200px;
         }
 
         .product-button {
@@ -234,12 +164,88 @@
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
 
+        /* ===== DIVIDER ===== */
+        .section-divider {
+            border: none;
+            border-top: 1px solid #e8e8e8;
+            margin: 40px 0;
+        }
+
+        /* ===== AGENT BIO SECTION ===== */
+        .agent-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            gap: 0;
+        }
+
+        /* Branding: name first */
+        .agent-name {
+            font-size: 18px;
+            font-weight: 700;
+            color: #0A2540;
+            letter-spacing: 0.3px;
+            margin-bottom: 16px;
+        }
+
+        /* Headshot below name */
+        .headshot-container {
+            margin-bottom: 20px;
+        }
+
+        .headshot {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #0A2540;
+            box-shadow: 0 4px 12px rgba(10, 37, 64, 0.15);
+            display: block;
+        }
+
+        /* Bio text below headshot */
+        .bio-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #0A2540;
+            margin-bottom: 12px;
+        }
+
+        .bio-text {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        /* Round phone graphic as CTA */
+        .phone-round-link {
+            display: block;
+            text-decoration: none;
+            margin: 0 auto;
+        }
+
+        .phone-round-img {
+            width: 200px;
+            height: 200px;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .phone-round-img:hover {
+            transform: scale(1.05);
+        }
+
         /* ===== FOOTER ===== */
         .footer {
             background-color: #3a4a5c;
             border-top: none;
             padding: 40px 20px 30px;
-            margin-top: 80px;
+            margin-top: 60px;
         }
 
         .footer-content {
@@ -273,21 +279,12 @@
             color: #b0c4de;
         }
 
-        /* ===== STATE LICENSES SECTION ===== */
         .licenses-section {
             font-size: 11px;
             color: #b0c4de;
             line-height: 1.6;
             margin: 20px 0;
-            padding: 0;
-            background-color: transparent;
             text-align: center;
-        }
-
-        .license-item {
-            display: inline;
-            margin: 0;
-            padding: 0;
         }
 
         .copyright {
@@ -301,16 +298,12 @@
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 768px) {
-            body {
-                padding: 30px 15px;
+            .top-bar {
+                padding: 10px 15px;
             }
 
-            .header {
-                margin-bottom: 40px;
-            }
-
-            .brand-logo-img {
-                max-width: 260px;
+            .phone-oblong-img {
+                height: 42px;
             }
 
             .section-title {
@@ -324,19 +317,20 @@
             .licenses-section {
                 font-size: 10px;
             }
+
+            .phone-round-img {
+                width: 160px;
+                height: 160px;
+            }
         }
 
         @media (max-width: 480px) {
-            body {
-                padding: 20px 10px;
-            }
-
-            .brand-logo-img {
-                max-width: 220px;
+            .phone-oblong-img {
+                height: 36px;
             }
 
             .agent-name {
-                font-size: 14px;
+                font-size: 15px;
             }
 
             .section-title {
@@ -359,11 +353,25 @@
             .licenses-section {
                 font-size: 9px;
             }
+
+            .phone-round-img {
+                width: 140px;
+                height: 140px;
+            }
         }
     </style>
 </head>
 <body>
+
+    <!-- TOP BAR: Oblong phone graphic in upper right -->
+    <div class="top-bar">
+        <a href="tel:+18444678738" class="phone-oblong-link">
+            <img src="phone-oblong.png" alt="Call 844-INSURE-U (844) 467-8738" class="phone-oblong-img">
+        </a>
+    </div>
+
     <div class="container">
+
         <!-- INDIVIDUAL COVERAGE SECTION -->
         <div class="section-header">
             <h2 class="section-title">Individual Coverage</h2>
@@ -371,7 +379,6 @@
         </div>
 
         <div class="products-grid">
-            <!-- Product 1 -->
             <div class="product-card">
                 <div class="product-icon-container">
                     <span class="product-icon">❤️</span>
@@ -380,67 +387,39 @@
                 <p class="product-description">Comprehensive coverage protecting you and your family</p>
                 <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=life-cancer-critical-illness" target="_blank" class="product-button">Explore Plans</a>
             </div>
-
-            <!-- Product 2 -->
             <div class="product-card">
                 <div class="product-icon-container">
                     <span class="product-icon">🛡️</span>
                 </div>
                 <h3 class="product-name">Fixed-Benefit Indemnity</h3>
-                <p class="product-description">Predictable benefits with fixed payouts for specific health events</p>
+                <p class="product-description">Predictable benefits with fixed payouts for health events</p>
                 <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=fixed-benefit-indemnity" target="_blank" class="product-button">Explore Plans</a>
             </div>
-
-            <!-- Product 3 -->
             <div class="product-card">
                 <div class="product-icon-container">
                     <span class="product-icon">💚</span>
                 </div>
                 <h3 class="product-name">My LIFE Wellness</h3>
-                <p class="product-description">Holistic wellness coverage combining health protection with lifestyle benefits</p>
+                <p class="product-description">Holistic wellness coverage with lifestyle benefits</p>
                 <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=my-life-wellness" target="_blank" class="product-button">Explore Plans</a>
             </div>
-
-            <!-- Product 4 -->
             <div class="product-card">
                 <div class="product-icon-container">
                     <span class="product-icon">🎯</span>
                 </div>
                 <h3 class="product-name">Cancer Only</h3>
-                <p class="product-description">Specialized cancer protection with dedicated benefits and support</p>
+                <p class="product-description">Specialized cancer protection with dedicated benefits</p>
                 <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EQD-iiQRt25z8toXaa9k0VZVGOBKdo5QcG5T5GZvQwKk60-N5odPmn2lP96xr7UzlgrBw&product=cancer-only" target="_blank" class="product-button">Explore Plans</a>
             </div>
         </div>
 
-        <!-- HEADER WITH HEADSHOT AND BRANDING -->
-        <div class="header">
-            <div class="headshot-container">
-                <img src="headshot.png" alt="Gregory M. Sloan" class="headshot">
-            </div>
-            
-            <div class="branding">
-                <img src="brand-logo.png" alt="844-INSURE-U | (844) 467-8738" class="brand-logo-img">
-                <div class="agent-name">Gregory M. Sloan, CLU, ChFC</div>
-            </div>
-        </div>
-
-        <!-- BIO SECTION -->
-        <div class="bio-section">
-            <h1 class="bio-title">Your Insurance Expert</h1>
-            <p class="bio-text">
-                I specialize in helping clients bypass the traditional, invasive life insurance process. With decades of industry experience and top-tier financial designations (CLU, ChFC), I leverage modern carriers with accelerated underwriting to find high-limit policies that prioritize your speed and privacy. Skip the generic quote engines and let me guide you to the exact right coverage for your family.
-            </p>
-            <a href="tel:+18444678738" class="call-cta">Speak with a Strategist</a>
-        </div>
-
-        <!-- SENIOR COVERAGE SECTION -->
+        <!-- SENIOR COVERAGE SECTION (directly below Individual) -->
         <div class="section-header">
             <h2 class="section-title">Senior Coverage</h2>
             <p class="section-subtitle">Specialized insurance solutions for your retirement years</p>
         </div>
 
         <div class="products-grid">
-            <!-- Senior Product 1 -->
             <div class="product-card">
                 <div class="product-icon-container">
                     <span class="product-icon">👁️</span>
@@ -449,8 +428,6 @@
                 <p class="product-description">Comprehensive sensory health coverage for seniors</p>
                 <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EStz6i1rrRK-1cNFDejrg8gz9OeMppYtGZ3eHUU7E1T86FO_-o0CkRuwLRXDyr0SHEDJg&product=dvh" target="_blank" class="product-button">View Rates</a>
             </div>
-
-            <!-- Senior Product 2 -->
             <div class="product-card">
                 <div class="product-icon-container">
                     <span class="product-icon">💰</span>
@@ -459,48 +436,62 @@
                 <p class="product-description">Affordable options with guaranteed acceptance for seniors</p>
                 <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EStz6i1rrRK-1cNFDejrg8gz9OeMppYtGZ3eHUU7E1T86FO_-o0CkRuwLRXDyr0SHEDJg&product=senior-indemnity" target="_blank" class="product-button">View Rates</a>
             </div>
-
-            <!-- Senior Product 3 -->
             <div class="product-card">
                 <div class="product-icon-container">
                     <span class="product-icon">🌟</span>
                 </div>
                 <h3 class="product-name">My LIFE Senior</h3>
-                <p class="product-description">Premium wellness coverage designed for active seniors</p>
+                <p class="product-description">Premium wellness coverage for active seniors</p>
                 <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EStz6i1rrRK-1cNFDejrg8gz9OeMppYtGZ3eHUU7E1T86FO_-o0CkRuwLRXDyr0SHEDJg&product=my-life-senior" target="_blank" class="product-button">View Rates</a>
             </div>
-
-            <!-- Senior Product 4 -->
             <div class="product-card">
                 <div class="product-icon-container">
                     <span class="product-icon">🎗️</span>
                 </div>
                 <h3 class="product-name">Senior Cancer Only</h3>
-                <p class="product-description">Focused cancer protection for seniors with enhanced benefits</p>
+                <p class="product-description">Focused cancer protection with enhanced benefits</p>
                 <a href="https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33EStz6i1rrRK-1cNFDejrg8gz9OeMppYtGZ3eHUU7E1T86FO_-o0CkRuwLRXDyr0SHEDJg&product=cancer-only" target="_blank" class="product-button">View Rates</a>
             </div>
         </div>
 
-        <!-- FOOTER -->
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-call">Call Greg Now (844) 467-8738</div>
-                
-                <div class="footer-links">
-                    <a href="/privacy-policy" target="_blank">Privacy Policy</a>
-                    <a href="/terms-of-service" target="_blank">Terms of Use</a>
-                </div>
+        <hr class="section-divider">
 
-                <div class="licenses-section">
-                    <span class="license-item">State Licenses: Gregory Sloan NPN: 2145633 | AL: 2120795 | AZ: 2145633 | AR: 2145633 | CA: 0056287 | CO: 674464 | CT: 2145633 | DE: 3002204744 | DC: 3001194986 | FL: P049737 | GA: 691049 | HI: 2145633 | ID: 2145633 | IL: 2145633 | IN: 383256 | IA: 2145633 | KS: 2145633 | KY: DGL 582845 | LA: 586989 | ME: PPN313085 | MD: 2084972 | MA: 2145633 | MI: 2145633 | MN: 2145633 | MS: 2145633 | MO: 2145633 | MT: 3000834623 | NE: 2145633 | NV: 187701 | NJ: 3000637570 | NM: 2145633 | NY: LA-1487931 | NC: 2145633 | ND: 2145633 | OH: 594399 | OK: 3000302658 | OR: 2145633 | PA: 33554S | RI: 3001986914 | SC: 2145633 | SD: 2145633 | TN: 2406242 | TX: 1273106 | UT: 830274 | VA: 827910 | WA: 825107 | WI: 2145633 | WI: 2145633 | WY: 374513</span>
-                </div>
-
-                <div class="copyright">
-                    © 2026 Gregory M Sloan. All rights reserved.
-                </div>
+        <!-- AGENT BIO SECTION: Name → Headshot → Bio → Round Phone Graphic -->
+        <div class="agent-section">
+            <div class="agent-name">Gregory M. Sloan, CLU, ChFC</div>
+            <div class="headshot-container">
+                <img src="headshot.png" alt="Gregory M. Sloan" class="headshot">
             </div>
-        </footer>
+            <h1 class="bio-title">Your Insurance Expert</h1>
+            <p class="bio-text">
+                I specialize in helping clients bypass the traditional, invasive life insurance process. With decades of industry experience and top-tier financial designations (CLU, ChFC), I leverage modern carriers with accelerated underwriting to find high-limit policies that prioritize your speed and privacy. Skip the generic quote engines and let me guide you to the exact right coverage for your family.
+            </p>
+            <a href="tel:+18444678738" class="phone-round-link">
+                <img src="phone-round.png" alt="Call Greg Now 844-INSURE-U (844) 467-8738" class="phone-round-img">
+            </a>
+        </div>
+
     </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-call">Call Greg Now (844) 467-8738</div>
+            
+            <div class="footer-links">
+                <a href="/privacy-policy" target="_blank">Privacy Policy</a>
+                <a href="/terms-of-service" target="_blank">Terms of Use</a>
+            </div>
+
+            <div class="licenses-section">
+                State Licenses: Gregory Sloan NPN: 2145633 | AL: 2120795 | AZ: 2145633 | AR: 2145633 | CA: 0056287 | CO: 674464 | CT: 2145633 | DE: 3002204744 | DC: 3001194986 | FL: P049737 | GA: 691049 | HI: 2145633 | ID: 2145633 | IL: 2145633 | IN: 383256 | IA: 2145633 | KS: 2145633 | KY: DGL 582845 | LA: 586989 | ME: PPN313085 | MD: 2084972 | MA: 2145633 | MI: 2145633 | MN: 2145633 | MS: 2145633 | MO: 2145633 | MT: 3000834623 | NE: 2145633 | NV: 187701 | NJ: 3000637570 | NM: 2145633 | NY: LA-1487931 | NC: 2145633 | ND: 2145633 | OH: 594399 | OK: 3000302658 | OR: 2145633 | PA: 33554S | RI: 3001986914 | SC: 2145633 | SD: 2145633 | TN: 2406242 | TX: 1273106 | UT: 830274 | VA: 827910 | WA: 825107 | WV: 2145633 | WI: 2145633 | WY: 374513
+            </div>
+
+            <div class="copyright">
+                &copy; 2026 Gregory M Sloan. All rights reserved.
+            </div>
+        </div>
+    </footer>
 
     <!-- JSON-LD Schema for SEO -->
     <script type="application/ld+json">
