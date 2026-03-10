@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gregory M. Sloan - Insurance Expert | 844-INSURE-U</title>
+    <title>844-INSURE-U | Individual &amp; Senior Insurance Enrollment | Gregory M. Sloan, CLU, ChFC</title>
     <meta name="description" content="Gregory M. Sloan, CLU, ChFC - Licensed Life & Health Insurance Agent. Explore supplemental health, life, and critical illness insurance plans.">
     <meta name="keywords" content="life insurance, health insurance, critical illness, cancer insurance, insurance agent">
     <meta name="author" content="Gregory M. Sloan, CLU, ChFC">
@@ -131,8 +131,15 @@
 
         @media (max-width: 640px) {
             .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .products-grid {
                 grid-template-columns: 1fr;
-                gap: 25px;
+                gap: 20px;
             }
         }
 
@@ -521,7 +528,7 @@
         <div class="agent-section">
             <div class="agent-name">Gregory M. Sloan, CLU, ChFC</div>
             <div class="headshot-container">
-                <img src="headshot.png" alt="Gregory M. Sloan" class="headshot">
+                <img src="headshot.png" alt="Gregory M. Sloan, CLU, ChFC - Senior Risk Strategist" class="headshot">
             </div>
             <h1 class="bio-title">Your Insurance Expert</h1>
             <p class="bio-text">
@@ -540,8 +547,8 @@
             <div class="footer-call">Call Greg Now (844) 467-8738</div>
             
             <div class="footer-links">
-                <a href="/privacy-policy" target="_blank">Privacy Policy</a>
-                <a href="/terms-of-service" target="_blank">Terms of Use</a>
+                <a href="https://americansinsured.com/privacy-policy" target="_blank">Privacy Policy</a>
+                <a href="https://americansinsured.com/terms-of-service" target="_blank">Terms of Use</a>
             </div>
 
             <div class="licenses-section">
@@ -558,14 +565,28 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Gregory M. Sloan Insurance Agency",
-        "description": "Licensed Life & Health Insurance Agent specializing in supplemental health, life, and critical illness insurance",
-        "telephone": "+1-844-467-8738",
+        "@type": "FinancialService",
+        "name": "Gregory M. Sloan Insurance Agency LLC",
+        "description": "Licensed Life & Health Insurance Agent with designations CLU, ChFC, specializing in individual and senior supplemental health, life, and critical illness insurance.",
+        "telephone": "844-467-8738",
         "url": "https://official844insureu.com",
         "areaServed": "US",
         "priceRange": "$$",
-        "knowsAbout": ["Life Insurance", "Health Insurance", "Critical Illness Insurance", "Cancer Insurance", "Supplemental Insurance"]
+        "employee": {
+            "@type": "Person",
+            "name": "Gregory M. Sloan",
+            "hasCredential": ["CLU", "ChFC"],
+            "jobTitle": "Licensed Insurance Agent"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "3210 N University Drive, Unit 223",
+            "addressLocality": "Coral Springs",
+            "addressRegion": "FL",
+            "postalCode": "33065",
+            "addressCountry": "US"
+        },
+        "knowsAbout": ["Life Insurance", "Health Insurance", "Critical Illness Insurance", "Cancer Insurance", "Supplemental Insurance", "Senior Insurance", "Dental Vision Hearing Insurance"]
     }
     </script>
 </body>
