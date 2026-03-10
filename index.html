@@ -29,11 +29,11 @@
             padding: 0;
         }
 
-        /* ===== TOP BAR with oblong phone graphic ===== */
+        /* ===== TOP BAR with CSS pill phone button ===== */
         .top-bar {
             position: relative;
             width: 100%;
-            padding: 12px 30px;
+            padding: 10px 24px;
             background: #ffffff;
             border-bottom: 1px solid #e8e8e8;
             display: flex;
@@ -41,15 +41,50 @@
             align-items: center;
         }
 
-        .phone-oblong-link {
-            display: block;
+        .phone-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #0A2540;
+            color: #ffffff;
             text-decoration: none;
+            padding: 10px 22px;
+            border-radius: 50px;
+            transition: background 0.2s ease, transform 0.1s ease;
+            white-space: nowrap;
         }
 
-        .phone-oblong-img {
-            height: 70px;
-            width: auto;
-            display: block;
+        .phone-pill:hover {
+            background: #0d3060;
+            transform: scale(1.02);
+        }
+
+        .phone-pill:active {
+            transform: scale(0.98);
+        }
+
+        .phone-pill-icon {
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        .phone-pill-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            line-height: 1.2;
+        }
+
+        .phone-pill-vanity {
+            font-size: 15px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .phone-pill-number {
+            font-size: 12px;
+            font-weight: 500;
+            opacity: 0.85;
         }
 
         /* ===== MAIN CONTAINER ===== */
@@ -302,8 +337,17 @@
                 padding: 12px 15px;
             }
 
-            .phone-oblong-img {
-                height: 56px;
+            .phone-pill {
+                padding: 9px 18px;
+                gap: 8px;
+            }
+
+            .phone-pill-vanity {
+                font-size: 13px;
+            }
+
+            .phone-pill-number {
+                font-size: 11px;
             }
 
             .section-title {
@@ -325,8 +369,21 @@
         }
 
         @media (max-width: 480px) {
-            .phone-oblong-img {
-                height: 48px;
+            .phone-pill {
+                padding: 8px 14px;
+                gap: 7px;
+            }
+
+            .phone-pill-icon {
+                font-size: 15px;
+            }
+
+            .phone-pill-vanity {
+                font-size: 12px;
+            }
+
+            .phone-pill-number {
+                font-size: 10px;
             }
 
             .agent-name {
@@ -363,10 +420,14 @@
 </head>
 <body>
 
-    <!-- TOP BAR: Oblong phone graphic in upper right -->
+    <!-- TOP BAR: CSS pill phone button in upper right -->
     <div class="top-bar">
-        <a href="tel:+18444678738" class="phone-oblong-link">
-            <img src="phone-oblong.png?v=3" alt="Call 844-INSURE-U (844) 467-8738" class="phone-oblong-img">
+        <a href="tel:+18444678738" class="phone-pill" aria-label="Call 844-INSURE-U">
+            <span class="phone-pill-icon">📞</span>
+            <span class="phone-pill-text">
+                <span class="phone-pill-vanity">844-INSURE-U</span>
+                <span class="phone-pill-number">(844) 467-8738</span>
+            </span>
         </a>
     </div>
 
