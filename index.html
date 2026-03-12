@@ -54,6 +54,8 @@
             border-radius: 50px;
             transition: background 0.2s ease, transform 0.1s ease;
             white-space: nowrap;
+            max-width: 100%;
+            overflow: hidden;
         }
 
         .phone-pill:hover {
@@ -124,12 +126,18 @@
             grid-template-columns: repeat(4, 1fr);
             gap: 40px;
             margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .product-card {
+            min-width: 0;
+            overflow: hidden;
         }
 
         @media (max-width: 1024px) {
             .products-grid {
                 grid-template-columns: repeat(2, 1fr);
-                gap: 30px;
+                gap: 20px;
             }
         }
 
