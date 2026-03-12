@@ -376,11 +376,14 @@
         @media (max-width: 768px) {
             .top-bar {
                 padding: 12px 15px;
+                box-sizing: border-box;
+                overflow: hidden;
             }
 
             .phone-pill {
                 padding: 9px 18px;
                 gap: 8px;
+                max-width: calc(100vw - 30px);
             }
 
             .phone-pill-vanity {
@@ -411,8 +414,14 @@
 
         @media (max-width: 480px) {
             .phone-pill {
-                padding: 8px 14px;
-                gap: 7px;
+                padding: 8px 12px;
+                gap: 6px;
+                max-width: calc(100vw - 24px);
+            }
+
+            .bio-text {
+                font-size: 0.95rem;
+                line-height: 1.7;
             }
 
             .phone-pill-icon {
